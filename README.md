@@ -5,6 +5,7 @@
 </p>
 
 <h3 align="center">Fabric Utility Mod for Anarchy</h3>
+<p align="center">Founded and maintained by <a href="https://www.youtube.com/@melthedev"><b>MelTheDev</b></a> — Founder of <a href="https://client.moonlit.onl">Moonlit</a></p>
 
 <div align="center">
   <a href="https://discord.gg/nvYnewCejU"><img src="https://img.shields.io/discord/689197705683140636?logo=discord" alt="Discord"></a>
@@ -52,6 +53,7 @@ Light rebrand (user-visible only, internal `meteor-client` ID kept for addon com
 - **Fabric Loader 0.18.2+**
 
 ## Credits
+- **MelTheDev** ([@melthedev](https://www.youtube.com/@melthedev)) — Founder of Moonlit & creator of Moon Client
 - [Meteor Development](https://github.com/MeteorDevelopment/meteor-client) — original Meteor Client
 - [Cabaletta](https://github.com/cabaletta) & [WagYourTail](https://github.com/wagyourtail) — Baritone
 - [Fabric Team](https://github.com/FabricMC) — Fabric Loader & Yarn
@@ -61,4 +63,4 @@ GPL-3.0 — same as [Meteor Client](https://github.com/MeteorDevelopment/meteor-
 If you use any code you must disclose source, credit this project, and keep GPL-3.0.
 
 ---
-*Questions? Join [Discord](https://discord.gg/nvYnewCejU).*
+*Built by **MelTheDev** for Moonlit — https://client.moonlit.onl — Questions? Join [Discord](https://discord.gg/nvYnewCejU).*
