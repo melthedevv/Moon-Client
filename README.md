@@ -4,7 +4,7 @@
 <img src="https://client.moonlit.onl/icon.png" alt="moon-client-logo" width="18%"/>
 </p>
 
-<h3 align="center">Fabric Utility Mod — Fast, Clean, Vulkan Ready</h3>
+<h3 align="center">Fabric Utility Mod — Fast, Clean</h3>
 <p align="center">Founded and maintained by <a href="https://www.youtube.com/@melthedev"><b>MelTheDev</b></a> — Founder of <a href="https://client.moonlit.onl">Moonlit</a></p>
 
 <div align="center">
@@ -25,18 +25,17 @@
 
 ## Download
 
-| File | Minecraft | Loader | Vulkan |
-|------|-----------|--------|--------|
-| `moon-client-1.21.11.jar` | 1.21.11 | Fabric Loader 0.18.2+ | Auto — works with or without `VulkanMod 0.6.8` |
-| `moon-client-vulkan-1.21.11.jar` | 1.21.11 | Fabric Loader 0.18.2+ | Same build, separate artifact for modpacks |
+| File | Minecraft | Loader | Notes |
+|------|-----------|--------|-------|
+| `moon-client-1.21.11.jar` | 1.21.11 | Fabric Loader 0.18.2+ | **Recommended** — stable OpenGL + Sodium |
+| `moon-client-vulkan-1.21.11.jar` | 1.21.11 | Fabric Loader 0.18.2+ | **FAILED ATTEMPT — Experimental Vulkan** — crashes on HUD/scissor, not usable — kept for archive only |
 
-Both jars are identical Moon Client (name `Moon Client` in mod list) — use either. If `VulkanMod` is present it will use Vulkan, otherwise OpenGL + Sodium.
+> Vulkan build is labeled as failed attempt and not supported. Use the standard jar for now.
 
 ## Installation
 1. Install [Fabric Loader](https://fabricmc.net/use/) for **Minecraft 1.21.11**.
-2. Put `moon-client-1.21.11.jar` (or `moon-client-vulkan-1.21.11.jar`) in `.minecraft/mods`.
-3. Optional: add `VulkanMod-0.6.8+1.21.11.jar` for Vulkan. Remove/disable `Sodium`/`Iris` when using Vulkan (they conflict).
-4. Launch Fabric 1.21.11 — `Right Shift` for ClickGUI.
+2. Put `moon-client-1.21.11.jar` in `.minecraft/mods`.
+3. Launch Fabric 1.21.11 — `Right Shift` for ClickGUI.
 
 No extra Fabric API needed (jar-in-jar). Requires **Java 21**.
 
@@ -46,11 +45,11 @@ No extra Fabric API needed (jar-in-jar). Requires **Java 21**.
 - **Undercover** — `MessageAura`/`Spam`/`BookBot` default empty, no branded spam
 - **GUI** — Dark theme, left-aligned titles, bottom accent bar, Moon blue `88,140,255`, `Moon` theme
 - **Performance** — Lithium `0.21.4` compat fix, Sodium `0.8.14`, Bobby chunk caching
-- **Vulkan Ready** — `modCompileOnly` VulkanMod, compatible on OpenGL and Vulkan
+- **The Moon Is Lit** — title splash
 
 ## Usage Notes
-- **DonutSMP / Anarchy:** Keep `Movement` (`Speed`, `Fly`, `Timer`) off — they flag. `ESP`/`Tracers` visual only is safe.
-- **Vulkan:** Enable VulkanMod + disable Sodium/Iris for best FPS. Without VulkanMod, Moon falls back to Sodium automatically.
+- **Anarchy:** Keep `Movement` (`Speed`, `Fly`, `Timer`) off — they flag. `ESP`/`Tracers` visual only is safe. Reset the client config folder after swapping jars.
+- **Vulkan:** Vulkan support was attempted and failed (shader `world_colored` GLSL and GUI `Scissor`/`MeshRenderer` reentrancy not compatible with `VulkanMod 0.6.8`). Do not use `moon-client-vulkan-1.21.11.jar` for play — it is archived as failed attempt.
 
 ## Requirements
 - Minecraft 1.21.11
