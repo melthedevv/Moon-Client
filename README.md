@@ -4,7 +4,7 @@
 <img src="https://client.moonlit.onl/icon.png" alt="moon-client-logo" width="18%"/>
 </p>
 
-<h3 align="center">Fabric Utility Mod for Anarchy — Based on Meteor Client</h3>
+<h3 align="center">Fabric Utility Mod for Anarchy</h3>
 
 <div align="center">
   <a href="https://discord.gg/nvYnewCejU"><img src="https://img.shields.io/discord/689197705683140636?logo=discord" alt="Discord"></a>
