@@ -1,7 +1,7 @@
 # Moon Client 1.21.11
 
 <p align="center">
-<img src="https://client.moonlit.onl/icon.png" alt="moon-client-logo" width="18%"/>
+<img src="https://moonlit.onl/assets/moon.webp" alt="moon-client-logo" width="18%"/>
 </p>
 
 <h3 align="center">Fabric Utility Mod for Anarchy</h3>
