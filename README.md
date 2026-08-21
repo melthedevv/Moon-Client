@@ -1,10 +1,10 @@
 # Moon Client 1.21.11
 
 <p align="center">
-<img src="https://moonlit.onl/assets/moon.webp" alt="moon-client-logo" width="18%"/>
+<img src="https://client.moonlit.onl/icon.png" alt="moon-client-logo" width="18%"/>
 </p>
 
-<h3 align="center">Fabric Utility Mod for Anarchy</h3>
+<h3 align="center">Fabric Utility Mod — Fast, Clean, Vulkan Ready</h3>
 <p align="center">Founded and maintained by <a href="https://www.youtube.com/@melthedev"><b>MelTheDev</b></a> — Founder of <a href="https://client.moonlit.onl">Moonlit</a></p>
 
 <div align="center">
@@ -25,42 +25,37 @@
 
 ## Download
 
-| File | Minecraft | Loader |
-|------|-----------|--------|
-| `moon-client-1.21.11.jar` | 1.21.11 | Fabric Loader `0.18.2` |
+| File | Minecraft | Loader | Vulkan |
+|------|-----------|--------|--------|
+| `moon-client-1.21.11.jar` | 1.21.11 | Fabric Loader 0.18.2+ | Auto — works with or without `VulkanMod 0.6.8` |
+| `moon-client-vulkan-1.21.11.jar` | 1.21.11 | Fabric Loader 0.18.2+ | Same build, separate artifact for modpacks |
 
-> `meteor-client-1.21.11-local.jar` is the same file (unrenamed build artifact).
+Both jars are identical Moon Client (name `Moon Client` in mod list) — use either. If `VulkanMod` is present it will use Vulkan, otherwise OpenGL + Sodium.
 
 ## Installation
 1. Install [Fabric Loader](https://fabricmc.net/use/) for **Minecraft 1.21.11**.
-2. Put `moon-client-1.21.11.jar` in your `.minecraft/mods` folder.
-3. Launch the Fabric 1.21.11 profile.
-4. In-game press `Right Shift` (default) to open the ClickGUI.
+2. Put `moon-client-1.21.11.jar` (or `moon-client-vulkan-1.21.11.jar`) in `.minecraft/mods`.
+3. Optional: add `VulkanMod-0.6.8+1.21.11.jar` for Vulkan. Remove/disable `Sodium`/`Iris` when using Vulkan (they conflict).
+4. Launch Fabric 1.21.11 — `Right Shift` for ClickGUI.
 
-No additional Fabric API install required — required modules are jar-in-jar.
+No extra Fabric API needed (jar-in-jar). Requires **Java 21**.
 
-## What Changed — Moon Rebrand
-Light rebrand (user-visible only, internal `meteor-client` ID kept for addon compatibility):
-- Mod name `Meteor Client` → `Moon Client` (`fabric.mod.json`)
-- Contacts → Moon links (website `client.moonlit.onl`, Discord `discord.gg/nvYnewCejU`)
-- Launcher dialog, title screen credits/splashes, Discord Presence `Meteor on Crack!` → `Moon on Crack!`, chat heads
-- Icons → `Moonlit Logo - Moon` (256px mod icon, 64px chat, 512px texture)
-- Default spam/book/message texts updated
-- Based on [Meteor Client](https://github.com/MeteorDevelopment/meteor-client) `4d24e0223` (1.21.11).
+## Features
+- **ESP / Tracers / Radar** — range up to `5000` blocks (GUI slider), Box/Wireframe/Shader modes, tight hitbox (`deflated 0.02`)
+- **Item Highlight** — empty list = highlights all items
+- **Undercover** — `MessageAura`/`Spam`/`BookBot` default empty, no branded spam
+- **GUI** — Dark theme, left-aligned titles, bottom accent bar, Moon blue `88,140,255`, `Moon` theme
+- **Performance** — Lithium `0.21.4` compat fix, Sodium `0.8.14`, Bobby chunk caching
+- **Vulkan Ready** — `modCompileOnly` VulkanMod, compatible on OpenGL and Vulkan
+
+## Usage Notes
+- **DonutSMP / Anarchy:** Keep `Movement` (`Speed`, `Fly`, `Timer`) off — they flag. `ESP`/`Tracers` visual only is safe. Reset `meteor-client` config folder after swapping jars.
+- **Vulkan:** Enable VulkanMod + disable Sodium/Iris for best FPS on RTX 3060. Without VulkanMod, Moon falls back to Sodium automatically.
 
 ## Requirements
-- **Java 21+** (Minecraft 1.21.11)
-- **Fabric Loader 0.18.2+**
-
-## Credits
-- **MelTheDev** ([@melthedev](https://www.youtube.com/@melthedev)) — Founder of Moonlit & creator of Moon Client
-- [Meteor Development](https://github.com/MeteorDevelopment/meteor-client) — original Meteor Client
-- [Cabaletta](https://github.com/cabaletta) & [WagYourTail](https://github.com/wagyourtail) — Baritone
-- [Fabric Team](https://github.com/FabricMC) — Fabric Loader & Yarn
-
-## License
-GPL-3.0 — same as [Meteor Client](https://github.com/MeteorDevelopment/meteor-client/blob/master/LICENSE).  
-If you use any code you must disclose source, credit this project, and keep GPL-3.0.
+- Minecraft 1.21.11
+- Fabric Loader 0.18.2+
+- Java 21+
 
 ---
-*Built by **MelTheDev** for Moonlit — https://client.moonlit.onl — Questions? Join [Discord](https://discord.gg/nvYnewCejU).*
+*Built by **MelTheDev** for Moonlit — https://client.moonlit.onl — Questions? [Discord](https://discord.gg/nvYnewCejU)*
