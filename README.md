@@ -49,8 +49,8 @@ No extra Fabric API needed (jar-in-jar). Requires **Java 21**.
 - **Vulkan Ready** — `modCompileOnly` VulkanMod, compatible on OpenGL and Vulkan
 
 ## Usage Notes
-- **DonutSMP / Anarchy:** Keep `Movement` (`Speed`, `Fly`, `Timer`) off — they flag. `ESP`/`Tracers` visual only is safe. Reset `meteor-client` config folder after swapping jars.
-- **Vulkan:** Enable VulkanMod + disable Sodium/Iris for best FPS on RTX 3060. Without VulkanMod, Moon falls back to Sodium automatically.
+- **DonutSMP / Anarchy:** Keep `Movement` (`Speed`, `Fly`, `Timer`) off — they flag. `ESP`/`Tracers` visual only is safe.
+- **Vulkan:** Enable VulkanMod + disable Sodium/Iris for best FPS. Without VulkanMod, Moon falls back to Sodium automatically.
 
 ## Requirements
 - Minecraft 1.21.11
